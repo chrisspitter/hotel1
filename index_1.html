@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Business Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #004e92, #000428);
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            width: 360px;
+            text-align: center;
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card .header {
+            background: linear-gradient(135deg, #00d4ff, #004e92);
+            padding: 40px 20px;
+        }
+
+        .card .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        .card h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            font-weight: 300;
+            margin: 0 0 20px;
+        }
+
+        .card .content {
+            padding: 20px;
+        }
+
+        .card .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin: 10px auto;
+            text-decoration: none;
+            color: white;
+            width: 80%;
+            background: linear-gradient(135deg, #00d4ff, #004e92);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .card .button:hover {
+            background: linear-gradient(135deg, #004e92, #00d4ff);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card .footer {
+            font-size: 12px;
+            font-weight: 300;
+            margin-top: 10px;
+            background: #002240;
+            padding: 10px;
+            color: #aaa;
+        }
+
+        /* Animation for Entry */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="https://via.placeholder.com/100" alt="Hotel Logo">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h1>Hotel Grand Luxe</h1>
+            <p>Your gateway to luxury and comfort. We provide the ultimate hospitality experience!</p>
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/918849789979" target="_blank" class="button"
+                style="display: flex;justify-content: space-evenly;align-items: center;margin-bottom: 20px;">
+                <img src="./whatsapp.png" alt="Hotel Logo" style="width: fit-content;height: 35px;">
+                Chat on WhatsApp
+            </a>
+
+            <a href="https://www.google.com/maps?q=21.135950927721957,72.76045951128445" target="_blank" class="button"
+                style="display: flex;justify-content: space-evenly;align-items: center;margin-bottom: 20px;">
+                <img src="./location.png" alt="Hotel Logo" style="width: fit-content;height: 30px;">
+                Location 1
+            </a>
+
+            <!-- Google Maps Button -->
+            <a href="https://www.google.com/maps?q=21.135950927721957,72.76045951128445" class="button" target="_blank">
+                📍 Find Us on Google Maps
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Hotel Grand Luxe © 2024. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

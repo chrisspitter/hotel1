@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Business Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff8c42, #ff3c83);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%),
+                radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%);
+            background-size: 50px 50px;
+            animation: moveBg 6s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes moveBg {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-50px, -50px);
+            }
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 360px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-top: -60px;
+            border: 5px solid #ffffff;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 50px;
+            margin: 10px auto;
+            text-decoration: none;
+            width: 80%;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button i {
+            margin-right: 8px;
+        }
+
+        .button.whatsapp {
+            background: linear-gradient(45deg, #25d366, #128c7e);
+        }
+
+        .button.whatsapp:hover {
+            background: linear-gradient(45deg, #128c7e, #25d366);
+        }
+
+        .button.map {
+            background: linear-gradient(45deg, #ff5722, #e64a19);
+        }
+
+        .button.map:hover {
+            background: linear-gradient(45deg, #e64a19, #ff5722);
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- Hotel Logo -->
+        <img src="https://via.placeholder.com/120" alt="Hotel Logo">
+        <h1>Hotel Elegance</h1>
+        <p>Your luxury stay awaits! Visit us for a serene experience with top-notch hospitality and comfort.</p>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919876543210" class="button whatsapp" target="_blank">
+            <i class="fa fa-whatsapp"></i> Chat with Us
+        </a>
+
+        <!-- Google Maps Button -->
+        <a href="https://www.google.com/maps?q=21.135950927721957,72.76045951128445" class="button map" target="_blank">
+            <i class="fa fa-map-marker"></i> Find Us on Google Maps
+        </a>
+
+        <div class="footer">
+            <p>Hotel Elegance © 2024. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Include FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

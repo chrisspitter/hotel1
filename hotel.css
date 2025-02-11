@@ -1,0 +1,144 @@
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card .hotel_logo {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #128C7E;
+}
+
+.map-button {
+    background-color: #4CAF50;
+}
+
+.map-button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+} */
+
+/* new css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff8c42, #ffe29a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card .hotel_logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: -60px;
+    border: 5px solid #ffffff;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 50px;
+    margin: 10px auto;
+    text-decoration: none;
+    width: 80%;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.button.whatsapp {
+    background-color: #25d366;
+}
+
+.button.whatsapp:hover {
+    background-color: #128c7e;
+}
+
+.button.map {
+    background-color: #ff5722;
+}
+
+.button.map:hover {
+    background-color: #e64a19;
+}
+
+.footer {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+}
